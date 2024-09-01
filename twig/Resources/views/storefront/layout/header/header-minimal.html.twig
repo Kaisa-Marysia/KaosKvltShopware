@@ -5,7 +5,7 @@
         {% block layout_header_minimal_inner %}
             <div class="container">
                 {% block layout_header_minimal_row %}
-                    <div class="row header-row header-minimal-row">
+                    <div class="row header-row header-minimal-row" style="background: black;">
                         {% block layout_header_minimal_logo %}
                             <div class="col-6 col-md-4 header-minimal-logo">
                                 {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
@@ -22,6 +22,7 @@
                             <div class="col-md-4 header-minimal-back-to-shop">
                                 <a href="{{ path('frontend.home.page') }}"
                                    class="btn btn-outline-primary header-minimal-back-to-shop-button"
+                                   style="color: white;"
                                    title="{{ 'checkout.finishButtonBackToShop'|trans|striptags }}">
                                     {{ 'checkout.finishButtonBackToShop'|trans|striptags }}
                                 </a>
